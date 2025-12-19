@@ -35,6 +35,27 @@ header{display:flex;justify-content:space-between;align-items:center;padding:12p
 .socials .facebook{background:#1877f2;}
 .socials .whatsapp{background:#25d366;}
 .socials .phone{background:#f44336;}
+/* Products Grid */
+.products{
+    padding:25px;
+    display:grid;
+    gap:20px; /* المسافة بين الكروت */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .products{
+        grid-template-columns: repeat(3, 1fr); /* 3 كروت في الصف على التابلت */
+    }
+}
+
+@media (min-width: 1024px) {
+    .products{
+        grid-template-columns: repeat(5, 1fr); /* 5 كروت في الصف على الكمبيوتر */
+    }
+}
+
 </style>
 </head>
 <body>
