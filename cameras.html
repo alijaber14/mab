@@ -51,6 +51,47 @@ nav a:hover{background:#e0e0e0;}
         grid-template-columns: repeat(5, 1fr); /* 5 كروت في الصف على الكمبيوتر */
     }
 }
+/* Header */
+header{
+    background: rgb(0, 128, 255);
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;       /* يسمح للعنصرين يلتفوا على الموبايل */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+header h1{
+    margin: 5px 0;
+    font-size: 20px;       /* تصغير حجم العنوان على الموبايل */
+    color: #ffffff;
+    flex: 1 1 100%;        /* العنوان ياخد كل العرض على الموبايل */
+    text-align: center;     /* يوضع في الوسط */
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;        /* السماح للروابط بالالتفاف */
+    justify-content: center; /* توسيط الروابط */
+    gap: 8px;
+}
+
+nav a{
+    margin: 5px 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 14px;       /* تصغير حجم الروابط على الموبايل */
+}
+
+nav a:hover{
+    background: #e0e0e0;
+    color: black;
+}
 
 </style>
 </head>
