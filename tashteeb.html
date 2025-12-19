@@ -52,9 +52,23 @@ nav a:hover{
 .products{
     padding:25px;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:40px; /* المسافة بين الكروت */
+    gap:20px; /* المسافة بين الكروت */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .products{
+        grid-template-columns: repeat(3, 1fr); /* 3 كروت في الصف على التابلت */
+    }
+}
+
+@media (min-width: 1024px) {
+    .products{
+        grid-template-columns: repeat(5, 1fr); /* 5 كروت في الصف على الكمبيوتر */
+    }
+}
+
 
 /* Single Product Card */
 .product{
@@ -190,6 +204,7 @@ nav a:hover{
 <div class="search-box">
     <input type="text" id="searchInput" placeholder="ابحث عن منتج..." onkeyup="searchProducts()">
 </div>
+<button id="orderBtn">اطلب المنتجات المختارة</button>
 
 <div class="sections-tabs">
     <button class="tab-btn active" onclick="showSection('hoses', this)">kion </button>
@@ -859,6 +874,25 @@ function resetProducts(){
         product.style.display = "block";
     });
 }
+</script>
+<script>
+document.getElementById('orderBtn').addEventListener('click', function() {
+    const selected = document.querySelectorAll('.product-checkbox:checked');
+    
+    if(selected.length === 0){
+        alert('اختر على الأقل منتج واحد');
+        return;
+    }
+    
+    let message = 'أريد طلب هذه المنتجات:%0A';
+    selected.forEach(p => {
+        message += `${p.dataset.name} - ${p.dataset.price}%0A`;
+    });
+
+    // استبدل الرقم بالرقم الخاص بك
+    const whatsappURL = `https://wa.me/201110696728?text=${message}`;
+    window.open(whatsappURL, '_blank');
+});
 </script>
 
 
