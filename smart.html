@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قسم سمارت هوم </title>
+
+<style>   
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:rgb(0, 128, 255);
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 0 12px rgba(0,0,0,0.15);
+}
+
+header h1{
+    margin:0;
+    font-size:24px;
+    color:#ffffff;
+}
+
+nav a{
+    margin:0 8px;
+    text-decoration:none;
+    color:#ffffff;
+    font-weight:bold;
+    padding:8px 14px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#e0e0e0;
+    color:black;
+}
+
+/* Products Grid */
+.products{
+    padding:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:40px; /* المسافة بين الكروت */
+}
+
+/* Single Product Card */
+.product{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    text-align:center;
+    transition:0.3s;
+    padding-bottom: 20px; /* مسافة داخل الكارت من تحت */
+}
+
+.product:hover{
+    transform:scale(1.05);
+    box-shadow:0 6px 20px rgba(0,0,0,0.25);
+}
+
+.product img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.product h3{
+    font-size:20px;
+    margin:12px 0 5px;
+}
+
+.price{
+    font-size:18px;
+    font-weight:bold;
+    color:#d32f2f;
+    margin-bottom:15px;
+}
+
+/* Order Button */
+.order-btn{
+    background-color:#28a745;
+    color:white;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.order-btn:hover{
+    background-color:#218838;
+}
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+
+.search-box input{
+    width:100%;
+    max-width:400px;
+    padding:12px 15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>قسم سمارت هوم </h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="tasess.html">تأسيس</a>
+    <a href="tashteeb.html">تشطيب</a>
+    <a href="cameras.html">كاميرات</a>
+    <a href="smart.html">سمارت</a>
+  </nav>
+</header>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="ابحث عن منتج..." onkeyup="searchProducts()">
+</div>
+
+<div class="products">
+<div class="product">
+    <img src="img/1 g.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart Light Switch 1-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1365 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1465 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+
+    <div class="product">
+    <img src="img/2G.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart Light Switch 2-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1465 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1565 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+
+   
+    <div class="product">
+    <img src="img/3g.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart Light Switch 3-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1565 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1665 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+   
+    <div class="product">
+    <img src="img/4g.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart Light Switch 4-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1665 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1765 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+
+    
+    <div class="product">
+    <img src="img/gg1.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave Smart Light Switch 1-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1546 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1646 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+  
+     <div class="product">
+    <img src="img/gg2.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave Smart Light Switch 2-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1646 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1746 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+   <div class="product">
+    <img src="img/gg3.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave Smart Light Switch 3-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1746 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1846 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+  
+     <div class="product">
+    <img src="img/gg4.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave Smart Light Switch 4-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1846 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1946 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+   
+     <div class="product">
+    <img src="img/ggg1.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave - metal frame Smart Light Switch 1-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 1910 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2010 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+     
+     <div class="product">
+    <img src="img/ggg2.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave - metal frame Smart Light Switch 2-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 2010 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2110 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+    
+     <div class="product">
+    <img src="img/ggg3.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave - metal frame Smart Light Switch 3-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 2110 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2210 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+     
+     <div class="product">
+    <img src="img/ggg4.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Concave - metal frame Smart Light Switch 4-Gang  </h3>
+    <p class="price">السعر(Wi Fi) : 2210 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2310 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+    
+     <div class="product">
+    <img src="img/s1.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>C​Smart Dimmer Switch  </h3>
+    <p class="price">السعر(Wi Fi) : 1800 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1900 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+    
+     <div class="product">
+    <img src="img/s2.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LCD SMART CONTROL (Light/cutain)Switch  </h3>
+    <p class="price">السعر(Wi Fi) : 3400 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+    
+     <div class="product">
+    <img src="img/S3.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>cutain Switch1 - CH  </h3>
+    <p class="price">السعر(Wi Fi) : 1728 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1828 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+   
+     <div class="product">
+    <img src="img/s4.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>cutain Switch2 - CH  </h3>
+    <p class="price">السعر(Wi Fi) : 1910 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2010 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+ 
+     <div class="product">
+    <img src="img/s5.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart A/C & Boiler Switch </h3>
+    <p class="price">السعر(Wi Fi) : 2090 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2180 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+     
+     <div class="product">
+    <img src="img/s6.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart Thermostat CONTROL </h3>
+    <p class="price">السعر(Wi Fi) : 3800 ج.م</p>
+        <p class="price">السعر  (Zigbee): 3900 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+     <div class="product">
+    <img src="img/s7.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>mini Light Switch 1-gang </h3>
+    <p class="price">السعر(Wi Fi) : 1200 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1300 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+
+ <div class="product">
+    <img src="img/s8.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>mini Light Switch 2-gang </h3>
+    <p class="price">السعر(Wi Fi) : 1300 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1400 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+
+<div class="product">
+    <img src="img/s9.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>mini Light Switch 3-gang </h3>
+    <p class="price">السعر(Wi Fi) : 1400 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1500 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+<div class="product">
+    <img src="img/s10.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>mini Light Switch 4-gang </h3>
+    <p class="price">السعر(Wi Fi) : 1500 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1600 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+<div class="product">
+    <img src="img/s11.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>mini curtain /  Switch 1-HC </h3>
+    <p class="price">السعر(Wi Fi) : 1350 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1450 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+<div class="product">
+    <img src="img/s12.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>mini curtain /  Switch 2-HC </h3>
+    <p class="price">السعر(Wi Fi) : 1550 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1650 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+</div>
+<div class="product">
+    <img src="img/s13.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart circuit Breaker</h3>
+    <p class="price">السعر(1P) : 4000 ج.م</p>
+        <p class="price">السعر  (2P): 4300 ج.م</p>
+        <p class="price">السعر(3P) : 5400 ج.م</p>
+        <p class="price">السعر  (4P): 5700 ج.م</p>
+
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/s14.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart socket All in one /3gang & USB & 1 - socket</h3>
+    <p class="price">السعر(Wi Fi) : 2800 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2900 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+ <div class="product">
+    <img src="img/s15.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart socket All in one /3gang & 2 - USB & 2 - socket</h3>
+    <p class="price">السعر(Wi Fi) : 3000 ج.م</p>
+        <p class="price">السعر  (Zigbee): 3100 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/s16.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>PC Frame> smart socket 2- socket</Frame></h3>
+    <p class="price">السعر(Wi Fi) : 2550 ج.م</p>
+        <p class="price">السعر  (Zigbee): 2650 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+    <div class="product">
+    <img src="img/s17.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart plug socket</Frame></h3>
+    <p class="price">السعر(Wi Fi) : 1150 ج.م</p>
+        <p class="price">السعر  (Zigbee): 1250 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+<div class="product">
+    <img src="img/s18.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart curtain kit </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 11000 ج.م</p>
+        <p class="price">السعر  (Zigbee): 11200 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/s19.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart curtain motor with Remote </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 4690 ج.م</p>
+        <p class="price">السعر  (Zigbee): 4890 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/s20.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 3.5 inch (Built in Alexa) </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 7390 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>  
+
+<div class="product">
+    <img src="img/s21.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 4 inch (Built in Alexa) </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 9999 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/s22.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 4 inch (Built in Amplifierr) </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 11290 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/s23.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 6 inch (Built in Amplifierr) </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 16490 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+     <div class="product">
+    <img src="img/s24.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 7 inch (Built in Amplifierr) 2- speaker </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 17899 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+     <div class="product">
+    <img src="img/s25.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 7 inch (Built in Amplifierr) 8- speaker </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 18990 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+     <div class="product">
+    <img src="img/w1.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 8 inch (Built in Amplifierr) 2- speaker </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 19490 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+  <div class="product">
+    <img src="img/w2.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 8 inch (Built in Amplifierr) 4- speaker </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 19990 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w3.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 8 inch pro </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 21790 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+     <div class="product">
+    <img src="img/w4.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 10 inch (Built - in Alexa) </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 25799 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+     <div class="product">
+    <img src="img/w5.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart home CONTROL panel 10 inch (Built - in Amplifierr) 2- speaker</Frame></h3>
+    <p class="price">السعر(Wi Fi) : 25799 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w6.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart Gateway Hub Zigbee 3.0 wireless</Frame></h3>
+    <p class="price">السعر(Wi Fi) : 2190 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w7.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart Gateway Hub Zigbee  wired</Frame></h3>
+    <p class="price">السعر(Wi Fi) : 4000 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w8.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart Gateway Hub Zigbee  wired</Frame></h3>
+    <p class="price">السعر(Wi Fi) : 3650 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+ <div class="product">
+    <img src="img/w9.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart Gateway Hub Zigbee  wired (Apple Homekit) </Frame></h3>
+    <p class="price">السعر(Wi Fi) : 3450 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w10.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart   Zigbee Powerful Repeater</Frame></h3>
+    <p class="price">السعر(Zigbee) : 1370 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w11.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart IR Remote (with Temp.& Humidity sunsir) </Frame></h3>
+    <p class="price">السعر(WI-FI) : 2000 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w12.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart WI-FI  IR Remote CONTROL </Frame></h3>
+    <p class="price">السعر(WI-FI) : 1640 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w13.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart WI-FI  IR RF Remote CONTROL </Frame></h3>
+    <p class="price">السعر(WI-FI) : 1910 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w14.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>smart  Zigbee IR  Remote CONTROL </Frame></h3>
+    <p class="price">السعر(Zigbee) : 1910 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w15.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Human Presence deteceor </Frame></h3>
+        <p class="price">السعر(WI-FI) : 2370 ج.م</p>
+    <p class="price">السعر(Zigbee) : 1910 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w16.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Human Presence deteceor </Frame></h3>
+        <p class="price">السعر(WI-FI) : 2280 ج.م</p>
+    <p class="price">السعر(Zigbee) : 2280 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w17.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Zigbee Pir motor sensor</Frame></h3>
+    <p class="price">السعر(Zigbee) : 1365 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w18.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>WI FI PIR motor sensor</Frame></h3>
+    <p class="price">السعر(WI FI) : 1365 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w19.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart GAS & Tamp. deteceor</Frame></h3>
+    <p class="price">السعر(WI FI) : 2100 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+ <div class="product">
+    <img src="img/w20.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart GAS deteceor</Frame></h3>
+    <p class="price">السعر(WI FI) : 2000 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w21.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart Zigbee GAS deteceor</Frame></h3>
+    <p class="price">السعر(WI FI) : 2000 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+    <div class="product">
+    <img src="img/w22.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart water Leak sensor</Frame></h3>
+    <p class="price">السعر(WI FI) : 1365 ج.م</p>
+        <p class="price">السعر(Zigbee) : 1465 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w23.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart water Leak sensor</Frame></h3>
+    <p class="price">السعر(WI FI) : 1180 ج.م</p>
+        <p class="price">السعر(Zigbee) : 1280 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w24.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart gas / water valve CONTROller</Frame></h3>
+    <p class="price">السعر(WI FI) : 2545 ج.م</p>
+        <p class="price">السعر(Zigbee) : 1645 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+     <div class="product">
+    <img src="img/w25.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Waterproof smart video doorbell </Frame></h3>
+    <p class="price">السعر(WI FI) : 3935 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+ <div class="product">
+    <img src="img/w26.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Waterproof smart video doorbell</Frame></h3>
+    <p class="price">السعر(WI FI) : 3935 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w27.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart smoke deteceor</Frame></h3>
+    <p class="price">السعر(WI FI) : 1800 ج.م</p>
+        <p class="price">السعر(Zigbee) : 1900 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w28.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart Door & window sensor</Frame></h3>
+    <p class="price">السعر(WI FI) : 1000 ج.م</p>
+        <p class="price">السعر(Zigbee) : 1100 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w29.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart Door & window sensor</Frame></h3>
+    <p class="price">السعر(WI FI) : 1200 ج.م</p>
+        <p class="price">السعر(Zigbee) : 1300 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w30.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart video doorbell (compatible with Alexa) </Frame></h3>
+    <p class="price">السعر(WI FI) : 3935 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w31.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart video doorbell (compatible with Alexa) </Frame></h3>
+    <p class="price">السعر(WI FI) : 3665 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w32.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart video doorbell (compatible with Alexa) </Frame></h3>
+    <p class="price">السعر(WI FI) : 3799 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w33.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart video doorbell Intercom  (video door phone LCD) </Frame></h3>
+    <p class="price">السعر(WI FI) : 4665 ج.م</p>
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w34.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Smart video doorbell Intercom  (video door phone HD) </Frame></h3>
+    <p class="price">السعر(WI FI) : 6399 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w35.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF1 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 20950 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+<div class="product">
+    <img src="img/W35.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF2 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 20950 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/W36.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF7 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 19455 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W37.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF9 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 19105 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W38.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF13 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 17910 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W38.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF14 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 17910 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W38.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF15 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 17910 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+    <div class="product">
+    <img src="img/W39.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF17 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 17910 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W40.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF27 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 16910 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+<div class="product">
+    <img src="img/W41.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF30 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18455 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W42.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF31 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18455 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W43.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF34 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 22365 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/W44.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF33 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18190 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w45.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF35 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18190 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w46.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF36 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18190 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w47.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF37 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18190 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w48.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF38 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18190 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+<div class="product">
+    <img src="img/w49.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF39 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 18190 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w50.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF19 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 16910 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w51.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>LWF22 - FULLY AUTTOMATIC SMART DOOR LOCK </Frame></h3>
+    <p class="price">السعر(WI FI) : 13450 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+<div class="product">
+    <img src="img/w52.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Semi AUTTOMATIC smart door lock LWE6 </Frame></h3>
+    <p class="price">السعر(WI FI) : 7450 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+    <div class="product">
+    <img src="img/w53.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Semi AUTTOMATIC smart door lock LWE9 PRO  </Frame></h3>
+    <p class="price">السعر(WI FI) : 6955 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+ <div class="product">
+    <img src="img/W54.png" alt="خرطوم ارضي 16" class="product-img">
+    <h3>Semi AUTTOMATIC smart door lock LWE26  </Frame></h3>
+    <p class="price">السعر(WI FI) : 6595 ج.م</p>  
+    <a href="https://wa.me/201110696728?text=أريد+طلب+خرطوم+ارضي+16" target="_blank">
+        <button class="order-btn">طلب المنتج</button>
+    </a>
+    </div>
+
+
+<script>
+function showSection(id){
+    document.querySelectorAll('.section').forEach(sec=>{
+        sec.classList.remove('active');
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(btn=>{
+        btn.classList.remove('active');
+    });
+
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+}
+<script>
+function searchProducts(){
+    let input = document.getElementById('searchInput').value.toLowerCase();
+    let products = document.querySelectorAll('.product');
+    let sections = document.querySelectorAll('.section');
+
+    let anyVisible = false;
+
+    products.forEach(product=>{
+        let text = product.innerText.toLowerCase();
+        if(text.includes(input)){
+            product.style.display = "block";
+            anyVisible = true;
+        }else{
+            product.style.display = "none";
+        }
+    });
+
+    // إظهار كل الأقسام أثناء البحث
+    sections.forEach(section=>{
+        if(input === ""){
+            section.classList.remove('active');
+        }else{
+            section.classList.add('active');
+        }
+    });
+
+    // رجوع لأول قسم لو السيرش فاضي
+    if(input === ""){
+        sections.forEach(sec=>sec.classList.remove('active'));
+        document.querySelector('.section').classList.add('active');
+    }
+}
+</script>
+
+</div>
+<script>
+function searchProducts() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let products = document.querySelectorAll(".product");
+
+    products.forEach(product => {
+        let text = product.innerText.toLowerCase();
+        if (text.includes(input)) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

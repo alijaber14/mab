@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قسم الكاميرات</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f4f4f4;}
+header{background:rgb(0, 94, 246);padding:15px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 0 12px rgb(244, 241, 241);}
+header h1{margin:0;font-size:24px;color:#ffffff;}
+nav a{margin:0 8px;text-decoration:none;color:#fbfbfb;font-weight:bold;padding:8px 14px;border-radius:8px;transition:0.3s;}
+nav a:hover{background:#e0e0e0;}
+.products{padding:25px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.product{background:white;border-radius:15px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.15);text-align:center;transition:0.3s;}
+.product:hover{transform:scale(1.05);box-shadow:0 6px 20px rgba(0,0,0,0.25);}
+.product img{width:100%;height:180px;object-fit:cover;}
+.product h3{font-size:20px;margin:12px 0 5px;}
+.price{font-size:18px;font-weight:bold;color:#d32f2f;margin-bottom:15px;}
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+
+.search-box input{
+    width:100%;
+    max-width:400px;
+    padding:12px 15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h1>قسم الكاميرات</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="tasess.html">تأسيس</a>
+    <a href="tashteeb.html">تشطيب</a>
+    <a href="cameras.html">كاميرات</a>
+    <a href="smart.html">سمارت</a>
+  </nav>
+</header>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="ابحث عن منتج..." onkeyup="searchProducts()">
+</div>
+
+<div class="products section active">
+    <div class="product">
+        <img src="img/cam1.jpg" alt="">
+        <h3>كاميرا 1080p</h3>
+        <p class="price">السعر: 750 ج.م</p>
+    </div>
+    <div class="product">
+        <img src="img/cam2.jpg" alt="">
+        <h3>كاميرا مراقبة سمارت</h3>
+        <p class="price">السعر: 1200 ج.م</p>
+    </div>
+</div>
+
+<script>
+function showSection(id){
+    document.querySelectorAll('.section').forEach(sec=>{
+        sec.classList.remove('active');
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(btn=>{
+        btn.classList.remove('active');
+    });
+
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+}
+
+function searchProducts(){
+    let input = document.getElementById('searchInput').value.toLowerCase();
+    let products = document.querySelectorAll('.product');
+    let sections = document.querySelectorAll('.section');
+
+    products.forEach(product=>{
+        let text = product.innerText.toLowerCase();
+        if(text.includes(input)){
+            product.style.display = "block";
+        }else{
+            product.style.display = "none";
+        }
+    });
+
+    // إظهار أو إخفاء الأقسام حسب البحث
+    if(input === ""){
+        sections.forEach(sec=>sec.classList.remove('active'));
+    }else{
+        sections.forEach(section=>section.classList.add('active'));
+    }
+}
+</script>
+
+
+</body>
+</html>
