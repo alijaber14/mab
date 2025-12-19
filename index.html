@@ -7,7 +7,7 @@
 <style>
 body{font-family:Arial,sans-serif;background:#f0f0f0;margin:0;padding:0;}
 header{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:#0d6efd;color:#fff;flex-wrap:wrap;position:sticky;top:0;z-index:1000;}
-.logo img{height: 100px;;}
+.logo img{height: 70px;;}
 .container{max-width:1200px;margin:40px auto;padding:0 16px;}
 .menu a{
   display:block;
@@ -55,6 +55,65 @@ header{display:flex;justify-content:space-between;align-items:center;padding:12p
         grid-template-columns: repeat(5, 1fr); /* 5 كروت في الصف على الكمبيوتر */
     }
 }
+/* Header */
+header{
+    background: rgb(0, 128, 255);
+    padding: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;       /* يسمح للعنصرين يلتفوا على الموبايل */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+header h1{
+    margin: 5px 0;
+    font-size: 20px;       /* تصغير حجم العنوان على الموبايل */
+    color: #ffffff;
+    flex: 1 1 100%;        /* العنوان ياخد كل العرض على الموبايل */
+    text-align: center;     /* يوضع في الوسط */
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;        /* السماح للروابط بالالتفاف */
+    justify-content: center; /* توسيط الروابط */
+    gap: 8px;
+}
+
+nav a{
+    margin: 5px 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 14px;       /* تصغير حجم الروابط على الموبايل */
+}
+
+nav a:hover{
+    background: #e0e0e0;
+    color: black;
+}
+.social-links {
+    display: flex;        /* نخليهم جنب بعض */
+    gap: 10px;            /* مسافة بسيطة بينهم */
+    justify-content: center; /* توسيط على الصفحة */
+    padding: 0;
+    margin: 0;
+}
+
+.social-links a {
+    all: unset;           /* يشيل أي CSS وراثي */
+    cursor: pointer;      /* يبين إنهم قابلين للنقر */
+    color: inherit;       /* اللون الطبيعي للنص */
+    transition: color 0.2s; /* تأثير سلس لتغيير اللون */
+}
+
+.social-links a:hover {
+    color: rgb(255, 238, 0);         /* يتحول للسود عند المرور أو اللمس */
+}
 
 </style>
 </head>
@@ -65,12 +124,16 @@ header{display:flex;justify-content:space-between;align-items:center;padding:12p
   <img src="img/AA.png" alt="Logo">
 </div>
 
-<div class="socials">
-    <a href="#" class="tiktok"><svg viewBox="0 0 24 24"><path d="M9 2v14a4 4 0 1 0 4-4h2a6 6 0 1 1-6 6V2z"/></svg></a>
-    <a href="#" class="instagram"><svg viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7z"/></svg></a>
-    <a href="#" class="facebook"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54"/></svg></a>
-    <a href="#" class="whatsapp"><svg viewBox="0 0 24 24"><path d="M16.67 13.29c-.27-.14-1.61-.79"/></svg></a>
-    <a href="#" class="phone"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053"/></svg></a>
+<div class="social-links">
+    <a href="https://www.tiktok.com/@mab14.4?_r=1&_t=ZS-92MS6z8JAjy">TikTok</a>
+    <a href="https://www.instagram.com/ahmedhndwy?igsh=YW13ejQ5MGVyZzNx">Instagram</a>
+    <a href="https://www.facebook.com/share/1CwDCbVL7s/">Facebook</a>
+<a href="https://wa.me/201110696728" target="_blank">WhatsApp</a>
+    <a href="#"><a href="tel:201110696728">هاتف</a>
+</a>
+</div>
+
+
 </div>
 </header>
 
